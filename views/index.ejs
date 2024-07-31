@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body class="bg-zinc-800 text-white min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md p-8 space-y-4 bg-zinc-900 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-center mb-4">Library Management</h1>
+        <form action="/create" method="post" class="space-y-4">
+            <div>
+                <label for="BookName" class="block mb-2 text-sm font-medium text-gray-300">Book Name</label>
+                <input type="text" id="BookName" name="BookName"
+                    class="w-full px-4 py-2 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter book name" required>
+            </div>
+            <div>
+                <label for="AuthorName" class="block mb-2 text-sm font-medium text-gray-300">Author Name</label>
+                <input type="text" id="AuthorName" name="AuthorName"
+                    class="w-full px-4 py-2 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter book author" required>
+            </div>
+            <div>
+                <label for="BookNumber" class="block mb-2 text-sm font-medium text-gray-300">Book Number</label>
+                <input type="number" id="BookNumber" name="BookNumber"
+                    class="w-full px-4 py-2 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter book number" min="0" required>
+            </div>
+            <div>
+                <label for="BookImgUrl" class="block mb-2 text-sm font-medium text-gray-300">Book Image URL</label>
+                <input type="text" id="BookImgUrl" name="BookImgUrl"
+                    class="w-full px-4 py-2 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter image URL" required>
+            </div>
+            <div>
+                <input type="submit" value="Add Book"
+                    class="w-full px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
